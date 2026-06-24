@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医学微生物学 高清复习资料</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #222;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #7b4bb8;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e8edf7;
+        }
+        .sidebar {
+            position: sticky;
+            top: 20px;
+            float: left;
+            width: 220px;
+            background: #f0e8f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-right: 25px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        .sidebar h3 {
+            color: #7b4bb8;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .sidebar a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin: 8px 0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .sidebar a:hover {
+            background: #7b4bb8;
+            color: white;
+        }
+        .main-content {
+            overflow: hidden;
+        }
+        .chapter {
+            margin-bottom: 25px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .chapter-title {
+            padding: 12px 18px;
+            background: #efe6fa;
+            font-size: 19px;
+            font-weight: bold;
+            color: #7b4bb8;
+            cursor: pointer;
+            user-select: none;
+        }
+        .chapter-body {
+            padding: 18px;
+            display: none;
+        }
+        .chapter-body.open {
+            display: block;
+        }
+        h4 {
+            margin: 16px 0 8px;
+            color: #7b4bb8;
+            font-size: 17px;
+        }
+        p, li {
+            margin: 6px 0;
+            font-size: 15px;
+        }
+        ul, ol {
+            padding-left: 24px;
+            margin: 8px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+        table th, table td {
+            border: 1px solid #cbd5e1;
+            padding: 9px 12px;
+        }
+        table th {
+            background-color: #d6bdea;
+            font-weight: bold;
+            color: #222;
+        }
+        .key {
+            color: #d92121;
+            font-weight: bold;
+        }
+        .img-box {
+            width: 100%;
+            margin: 15px 0;
+        }
+        .img-box img {
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+        @media (max-width:768px) {
+            .sidebar {
+                float: none;
+                width: 100%;
+                margin: 0 0 20px;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>医学微生物学 高清复习资料</h1>
+    <div class="sidebar">
+        <h3>目录导航</h3>
+        <a href="#ch1">一、绪论（三类微生物）</a>
+        <a href="#ch2">二、细菌形态结构（革兰细胞壁）</a>
+        <a href="#ch3">三、细菌生长四期</a>
+        <a href="#ch4">四、细菌变异现象</a>
+        <a href="#ch5">五、基因转移重组</a>
+        <a href="#ch6">六、内外毒素对比</a>
+        <a href="#ch7">七、全身五种感染类型</a>
+        <a href="#ch8">八、细菌传播途径</a>
+    </div>
+    <div class="main-content">
+        <!-- 章节1 三类微生物 -->
+        <div class="chapter" id="ch1">
+            <div class="chapter-title" onclick="toggleChapter(this)">一、三种微生物的特点</div>
+            <div class="chapter-body open">
+                <div class="img-box">
+                    <img src="img1.jpg" alt="三种微生物的特点">
+                </div>
+                <h4>核心考点</h4>
+                <ol>
+                    <li><span class="key">非细胞型</span>：仅含一种核酸，必须活细胞培养，干扰素敏感，抗生素无效（病毒）</li>
+                    <li><span class="key">原核细胞型（6大类）</span>：细菌、放线菌、支原体、衣原体、立克次体、螺旋体，只有核糖体</li>
+                    <li><span class="key">真核细胞型</span>：真菌，有完整细胞核与全套细胞器</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- 章节2 革兰细胞壁 -->
+        <div class="chapter" id="ch2">
+            <div class="chapter-title" onclick="toggleChapter(this)">二、革兰阳性菌与阴性菌细胞壁对比</div>
+            <div class="chapter-body open">
+                <div class="img-box">
+                    <img src="img2.jpg" alt="革兰阳性菌与阴性菌细胞壁结构比较">
+                </div>
+                <h4>记忆要点</h4>
+                <ul>
+                    <li>G+：厚、肽聚糖极多，有磷壁酸，无外膜</li>
+                    <li>G-：薄、肽聚糖极少，无磷壁酸，有脂蛋白+脂质双层+脂多糖外膜</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 章节3 细菌生长四期 -->
+        <div class="chapter" id="ch3">
+            <div class="chapter-title" onclick="toggleChapter(this)">三、细菌生长曲线四时期</div>
+            <div class="chapter-body open">
+                <div class="img-box">
+                    <img src="img3.jpg" alt="细菌生长四期">
+                </div>
+                <ul>
+                    <li>对数期：形态、染色、药敏性状最典型，做实验首选</li>
+                    <li>稳定期：产生芽胞、外毒素、抗生素</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 章节4 细菌变异 -->
+        <div class="chapter" id="ch4">
+            <div class="chapter-title" onclick="toggleChapter(this)">四、细菌的变异现象</div>
+            <div class="chapter-body open">
+                <div class="img-box">
+                    <img src="img4.jpg" alt="细菌的变异现象">
+                </div>
+            </div>
+        </div>
+
+        <!-- 章节5 基因转移重组 -->
+        <div class="chapter" id="ch5">
+            <div class="chapter-title" onclick="toggleChapter(this)">五、基因的转移与重组的方式</div>
+            <div class="chapter-body open">
+                <div class="img-box">
+                    <img src="img5.jpg" alt="基因的转移与重组的方式">
+                </div>
+            </div>
+        </div>
+
+        <!-- 章节6 内外毒素 -->
+        <div class="chapter" id="ch6">
+            <div class="chapter-title" onclick="toggleChapter(this)">六、外毒素与内毒素的主要区别</div>
+            <div class="chapter-body open">
+                <div class="img-box">
+                    <img src="img6.jpg" alt="外毒素与内毒素的主要区别">
+                </div>
+            </div>
+        </div>
+
+        <!-- 章节7 全身感染 -->
+        <div class="chapter" id="ch7">
+            <div class="chapter-title" onclick="toggleChapter(this)">七、全身五种感染类型</div>
+            <div class="chapter-body open">
+                <div class="img-box">
+                    <img src="img7.jpg" alt="全身感染">
+                </div>
+            </div>
+        </div>
+
+        <!-- 章节8 传播途径 -->
+        <div class="chapter" id="ch8">
+            <div class="chapter-title" onclick="toggleChapter(this)">八、细菌传播途径</div>
+            <div class="chapter-body open">
+                <div class="img-box">
+                    <img src="img8.jpg" alt="细菌传播途径">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// 折叠/展开章节
+function toggleChapter(el) {
+    let body = el.nextElementSibling;
+    body.classList.toggle("open");
+}
+</script>
+</body>
+</html>
